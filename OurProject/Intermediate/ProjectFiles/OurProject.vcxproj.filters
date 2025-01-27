@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\OurProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{51BE2497-CEDD-4C12-851D-E87109A99938}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\OurProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\OurProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\OurProject">
+      <UniqueIdentifier>{ED89772C-DC2B-4E8B-8E96-9831F9DED7F7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\OurProject\BaseNode.cpp">
+      <Filter>Source\OurProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OurProject\BaseNode.h">
+      <Filter>Source\OurProject</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\OurProject\OurProject.Build.cs">
+      <Filter>Source\OurProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\OurProject\OurProject.cpp">
+      <Filter>Source\OurProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\OurProject\OurProject.h">
+      <Filter>Source\OurProject</Filter>
+    </ClInclude>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>
