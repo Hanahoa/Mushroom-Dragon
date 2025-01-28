@@ -535,7 +535,7 @@
 /FI"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\OurProjectEditor\Development\Engine\SharedPCH.Engine.h"
 /Yu"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\OurProjectEditor\Development\Engine\SharedPCH.Engine.h"
 /Fp"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\OurProjectEditor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject\OurProject.cpp"
+"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject\Public\OurProject.cpp"
 /FI"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\Definitions.OurProject.h"
 /Fo"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\OurProject.cpp.obj"
 /TP

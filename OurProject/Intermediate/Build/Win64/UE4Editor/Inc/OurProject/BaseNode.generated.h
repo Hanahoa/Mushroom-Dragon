@@ -13,7 +13,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OURPROJECT_BaseNode_generated_h
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_RPC_WRAPPERS \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execisSameState) \
 	{ \
@@ -43,7 +43,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execisSameState) \
 	{ \
@@ -73,7 +73,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	}
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_INCLASS_NO_PURE_DECLS \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseNode(); \
 	friend struct Z_Construct_UClass_ABaseNode_Statics; \
@@ -82,7 +82,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseNode)
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_INCLASS \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesABaseNode(); \
 	friend struct Z_Construct_UClass_ABaseNode_Statics; \
@@ -91,7 +91,7 @@ public: \
 	DECLARE_SERIALIZER(ABaseNode)
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_STANDARD_CONSTRUCTORS \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABaseNode(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABaseNode) \
@@ -104,7 +104,7 @@ private: \
 public:
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_ENHANCED_CONSTRUCTORS \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABaseNode(ABaseNode&&); \
@@ -115,26 +115,26 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ABaseNode); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABaseNode)
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_PRIVATE_PROPERTY_OFFSET
-#define OurProject_Source_OurProject_Private_BaseNode_h_10_PROLOG
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_GENERATED_BODY_LEGACY \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_PRIVATE_PROPERTY_OFFSET
+#define OurProject_Source_OurProject_Public_BaseNode_h_10_PROLOG
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_PRIVATE_PROPERTY_OFFSET \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_RPC_WRAPPERS \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_INCLASS \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_STANDARD_CONSTRUCTORS \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_PRIVATE_PROPERTY_OFFSET \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_RPC_WRAPPERS \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_INCLASS \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define OurProject_Source_OurProject_Private_BaseNode_h_13_GENERATED_BODY \
+#define OurProject_Source_OurProject_Public_BaseNode_h_13_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_PRIVATE_PROPERTY_OFFSET \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_INCLASS_NO_PURE_DECLS \
-	OurProject_Source_OurProject_Private_BaseNode_h_13_ENHANCED_CONSTRUCTORS \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_PRIVATE_PROPERTY_OFFSET \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_INCLASS_NO_PURE_DECLS \
+	OurProject_Source_OurProject_Public_BaseNode_h_13_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -142,7 +142,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> OURPROJECT_API UClass* StaticClass<class ABaseNode>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID OurProject_Source_OurProject_Private_BaseNode_h
+#define CURRENT_FILE_ID OurProject_Source_OurProject_Public_BaseNode_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
