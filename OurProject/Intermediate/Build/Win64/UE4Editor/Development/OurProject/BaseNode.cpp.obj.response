@@ -28,6 +28,7 @@
 /wd4838
 /we4668
 /I .
+/I C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -500,6 +501,7 @@
 /I Runtime\ClothingSystemRuntimeInterface
 /I C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Inc\OurProject
 /I C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source
+/I C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject\Public
 /I C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager

@@ -7,11 +7,9 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\OurProjectEditor\Development\Engine\SharedPCH.Engine.h.obj"
-"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\MyActorComponentTest.cpp.obj"
 "C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\BaseNode.cpp.obj"
 "C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\OurProject.cpp.obj"
 "C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\BaseNode.gen.cpp.obj"
-"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\MyActorComponentTest.gen.cpp.obj"
 "C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\OurProject.init.gen.cpp.obj"
 "C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\Default.rc2.res"
 /OUT:"C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\UE4Editor-OurProject.lib"

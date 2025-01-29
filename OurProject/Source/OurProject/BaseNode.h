@@ -16,20 +16,23 @@ public:
 	// Sets default values for this actor's properties
 	ABaseNode();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	UStaticMeshComponent* nodeMesh;
+	UPROPERTY(VisibleAnywhere)
+		class UStaticMeshComponent* nodeMesh;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		UStaticMeshComponent* playerMesh;
+		class UMaterialInterface* playerMat;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		UStaticMeshComponent* enemyMesh;
+		class UMaterialInterface* enemyMat;
 
 	UPROPERTY(visibleAnywhere)
 		int unitsOnNode; 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int controlledState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float health;
 
 	UFUNCTION()
 		void addUnit(FString attacker);
