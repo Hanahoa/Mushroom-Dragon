@@ -20,9 +20,6 @@ public:
 	UStaticMeshComponent* nodeMesh;
 
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* neutralMesh;
-
-	UPROPERTY(VisibleAnywhere)
 		UStaticMeshComponent* playerMesh;
 
 	UPROPERTY(VisibleAnywhere)
@@ -42,6 +39,9 @@ public:
 
 	UFUNCTION()
 		bool isSameState(FString name);
+
+	UFUNCTION()
+		void flipControlledState();
 
 protected:
 	// Called when the game starts or when spawned

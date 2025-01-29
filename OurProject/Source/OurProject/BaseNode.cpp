@@ -17,9 +17,8 @@ void ABaseNode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	nodeMesh = neutralMesh;
 	unitsOnNode = 0;
-	controlledState = 0; 
+	controlledState = 1; 
 }
 
 // Called every frame
@@ -32,34 +31,19 @@ void ABaseNode::Tick(float DeltaTime)
 
 void ABaseNode::addUnit(FString attackerName)
 {
-	if (controlledState == 0)
-	{
-		setState(attackerName);
+	if (isSameState(attackerName) == true)
 		unitsOnNode++;
-	}
-	else if (isSameState(attackerName) == true)
-	{
-		unitsOnNode++;
-	}
 	else if(isSameState(attackerName) == false)
-	{
 		unitsOnNode--;
-	}
 
 	if (unitsOnNode == 0)
-	{
-		setState("Neutral");
-	}
+		flipControlledState();
 }
 
 void ABaseNode::setState(FString name)
 {
-	if (name == "Neutral")
-	{
-		controlledState = 0;
-		nodeMesh = neutralMesh;
-	}
-	else if (name == "Player")
+	
+	if (name == "Player")
 	{
 		controlledState = 1;
 		nodeMesh = playerMesh;
@@ -74,14 +58,17 @@ void ABaseNode::setState(FString name)
 bool ABaseNode::isSameState(FString name)
 {
 	if (name == "Player" && controlledState == 1)
-	{
 		return true;
-	}
 	else if (name == "Enemy" && controlledState == 2)
-	{
 		return true;
-	}
 
 	return false; 
 }
 
+void ABaseNode::flipControlledState()
+{
+	if (controlledState == 1)
+		controlledState = 2;
+	else if (controlledState == 2)
+		controlledState = 1; 
+}
