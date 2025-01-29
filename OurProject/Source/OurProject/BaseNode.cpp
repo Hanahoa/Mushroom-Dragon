@@ -18,7 +18,7 @@ void ABaseNode::BeginPlay()
 	Super::BeginPlay();
 
 	unitsOnNode = 0;
-	controlledState = 1; 
+	//controlledState = 1; 
 }
 
 // Called every frame

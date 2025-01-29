@@ -218,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		{ "ModuleRelativePath", "BaseNode.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState = { "controlledState", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, controlledState), METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState = { "controlledState", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, controlledState), METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_unitsOnNode_MetaData[] = {
 		{ "Category", "BaseNode" },
@@ -233,7 +233,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		{ "ModuleRelativePath", "BaseNode.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMesh = { "enemyMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, enemyMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMesh = { "enemyMesh", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, enemyMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh_MetaData[] = {
 		{ "Category", "BaseNode" },
@@ -241,7 +241,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		{ "ModuleRelativePath", "BaseNode.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh = { "playerMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, playerMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh = { "playerMesh", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, playerMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_playerMesh_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData[] = {
 		{ "Category", "BaseNode" },
@@ -249,7 +249,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		{ "ModuleRelativePath", "BaseNode.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh = { "nodeMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, nodeMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh = { "nodeMesh", nullptr, (EPropertyFlags)0x001000000008000d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, nodeMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseNode_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_unitsOnNode,
@@ -284,7 +284,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseNode, 2661494459);
+	IMPLEMENT_CLASS(ABaseNode, 4180062871);
 	template<> OURPROJECT_API UClass* StaticClass<ABaseNode>()
 	{
 		return ABaseNode::StaticClass();

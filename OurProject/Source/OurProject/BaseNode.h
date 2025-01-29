@@ -16,19 +16,19 @@ public:
 	// Sets default values for this actor's properties
 	ABaseNode();
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UStaticMeshComponent* nodeMesh;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UStaticMeshComponent* playerMesh;
 
-	UPROPERTY(VisibleAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		UStaticMeshComponent* enemyMesh;
 
 	UPROPERTY(visibleAnywhere)
 		int unitsOnNode; 
 
-	UPROPERTY(visibleAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int controlledState;
 
 	UFUNCTION()
