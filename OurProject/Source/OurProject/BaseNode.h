@@ -17,19 +17,22 @@ public:
 	ABaseNode();
 
 	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* nodeMesh;
+		class UStaticMeshComponent* nodeMesh;
 
-	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* playerMesh;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class UMaterialInterface* playerMat;
 
-	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* enemyMesh;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		class UMaterialInterface* enemyMat;
 
 	UPROPERTY(visibleAnywhere)
 		int unitsOnNode; 
 
-	UPROPERTY(visibleAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		int controlledState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float health;
 
 	UFUNCTION()
 		void addUnit(FString attacker);
