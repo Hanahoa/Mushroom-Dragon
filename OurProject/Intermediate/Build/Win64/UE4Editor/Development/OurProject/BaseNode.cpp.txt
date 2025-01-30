@@ -1,0 +1,3 @@
+C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Development\OurProject\Definitions.OurProject.h
+c:\users\brian\documents\github\mushroom-dragon\ourproject\source\ourproject\BaseNode.h
+C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Win64\UE4Editor\Inc\OurProject\BaseNode.generated.h

@@ -77,3 +77,7 @@ DerivedDataCache/*
 *.json
 *.png
 *.log
+/OurProject/Intermediate
+*.txt
+*.pdb
+*.modules
