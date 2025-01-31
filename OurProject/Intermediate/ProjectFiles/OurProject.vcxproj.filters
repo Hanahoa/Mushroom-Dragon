@@ -60,4 +60,14 @@
       <Filter>Source\OurProject\Public</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\OurProject\Public\Unit.h">
+      <Filter>Source\OurProject\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\OurProject\Private\Unit.cpp">
+      <Filter>Source\OurProject\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
