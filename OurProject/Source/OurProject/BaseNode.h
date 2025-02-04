@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "EClaimState.h"
+#include "SoundDefinitions.h"
+#include "Sound/SoundWave.h"
 #include "BaseNode.generated.h"
 
 
@@ -32,7 +35,25 @@ public:
 		int controlledState;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float health;
+		float maxHealth = 20.0f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float health = maxHealth;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		EClaimState nodeClaimState;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		USoundWave* claimSound;
+
+	UFUNCTION(BlueprintCallable)
+		void nodeClaimed(EClaimState botTeam);
+
+	UFUNCTION(BlueprintCallable)
+		bool isCaptured();
+
+	UFUNCTION()
+		void takeDamage(float damage);
 
 	UFUNCTION()
 		void addUnit(FString attacker);

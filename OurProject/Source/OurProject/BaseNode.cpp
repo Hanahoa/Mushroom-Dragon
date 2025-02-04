@@ -4,6 +4,7 @@
 #include "BaseNode.h"
 #include "Components/StaticMeshComponent.h"
 #include "Materials/MaterialInstanceDynamic.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ABaseNode::ABaseNode()
@@ -24,7 +25,7 @@ void ABaseNode::BeginPlay()
 	Super::BeginPlay();
 
 	unitsOnNode = 0;
-	//controlledState = 1;
+	controlledState = 1;
 
 }
 
@@ -33,6 +34,61 @@ void ABaseNode::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ABaseNode::nodeClaimed(EClaimState botTeam)
+{
+	switch (botTeam)
+	{
+	case EClaimState::AntiVirus:
+		if (nodeClaimState == EClaimState::Virus)
+		{
+			nodeMesh->SetMaterial(0, playerMat);
+			nodeClaimState = EClaimState::Virus;
+			UGameplayStatics::PlaySoundAtLocation(this, claimSound, GetActorLocation());
+			health = maxHealth;
+		}
+		else
+		{ 
+			return;
+		}
+		break;
+
+	case EClaimState::Virus:
+		if (nodeClaimState == EClaimState::AntiVirus)
+		{
+			nodeMesh->SetMaterial(0, enemyMat);
+			nodeClaimState = EClaimState::AntiVirus;
+			UGameplayStatics::PlaySoundAtLocation(this, claimSound, GetActorLocation());
+			health = maxHealth;
+		}
+		else
+		{
+			return;
+		}
+		break;
+
+	default:
+		break;
+	}
+}
+
+bool ABaseNode::isCaptured()
+{
+	if (health <= 0.0f)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void ABaseNode::takeDamage(float damage)
+{
+	health = health - damage;
+	isCaptured();
 }
 
 
@@ -49,7 +105,7 @@ void ABaseNode::addUnit(FString attackerName)
 
 void ABaseNode::setState(FString name)
 {
-	
+
 	if (name == "Player")
 	{
 		controlledState = 1;

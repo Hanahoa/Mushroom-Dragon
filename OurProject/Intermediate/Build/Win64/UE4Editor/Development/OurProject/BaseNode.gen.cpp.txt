@@ -2,4 +2,28 @@ C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Intermediate\Build\Wi
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject/BaseNode.h
+C:\Users\brian\Documents\GitHub\Mushroom-Dragon\OurProject\Source\OurProject\Public\EClaimState.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Public\SoundDefinitions.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\GraphEditAction.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\ActiveSound.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\Audio/AudioDebug.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\AudioDynamicParameter.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Components/AudioComponent.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioComponent.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Sound/SoundSourceBus.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Sound/SoundWaveProcedural.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundWaveProcedural.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundSourceBus.generated.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\AudioThread.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\AudioDeviceManager.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\AudioDevice.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AudioMixer\Public\DSP/SpectrumAnalyzer.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AudioMixer\Public\DSP/BufferVectorOperations.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AudioMixer\Public\DSP/AudioFFT.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Sound/AudioSettings.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\AudioSettings.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Sound/SoundMix.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SoundMix.generated.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\AudioVirtualLoop.h
 c:\users\brian\documents\github\mushroom-dragon\ourproject\intermediate\build\win64\ue4editor\inc\ourproject\BaseNode.generated.h

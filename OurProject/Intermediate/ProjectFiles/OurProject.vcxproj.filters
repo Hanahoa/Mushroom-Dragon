@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\OurProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{51D244DD-313D-4303-81E0-6138FE15CE5C}</UniqueIdentifier>
+      <UniqueIdentifier>{B49270F5-D1AA-4D1E-B7DD-EA2AE1D2D666}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\OurProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F67B774A-478B-441A-9441-BAFEA627E559}</UniqueIdentifier>
+      <UniqueIdentifier>{60185866-0573-461A-A3B8-42AF3AC145BA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\OurProject">
-      <UniqueIdentifier>{62FF0AF9-0873-492C-BFDD-8767D8E8B900}</UniqueIdentifier>
+      <UniqueIdentifier>{A0ADCF73-9EED-4BE9-AC00-4A2480967D98}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\OurProject\BaseNode.cpp">
       <Filter>Source\OurProject</Filter>
@@ -48,25 +48,37 @@
       <Filter>Source\OurProject</Filter>
     </ClInclude>
     <Filter Include="Source\OurProject\Private">
-      <UniqueIdentifier>{0CEBD491-11C9-4042-AC24-944F41D9C92D}</UniqueIdentifier>
+      <UniqueIdentifier>{6AC42F0D-6D7C-4BDE-BAA1-20D6B95F4F39}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\OurProject\Private\MyActorComponentTest.cpp">
+    <ClCompile Include="..\..\Source\OurProject\Private\ClaimState.cpp">
+      <Filter>Source\OurProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\OurProject\Private\DefenseComponent.cpp">
       <Filter>Source\OurProject\Private</Filter>
     </ClCompile>
     <Filter Include="Source\OurProject\Public">
-      <UniqueIdentifier>{E9173FC4-D150-4EAF-8F8F-3E641361F30B}</UniqueIdentifier>
+      <UniqueIdentifier>{EAB267F0-D11E-419D-8791-CC3907217BD8}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\OurProject\Public\MyActorComponentTest.h">
+    <ClInclude Include="..\..\Source\OurProject\Public\ClaimState.h">
       <Filter>Source\OurProject\Public</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\Source\OurProject\Public\DefenseComponent.h">
       <Filter>Source\OurProject\Public</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\OurProject\Private\DefenseComponent.cpp">
+    <ClInclude Include="..\..\Source\OurProject\Public\EClaimState.h">
+      <Filter>Source\OurProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\OurProject\Public\Bot.h">
+      <Filter>Source\OurProject\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\OurProject\Private\EClaimState.cpp">
+      <Filter>Source\OurProject\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\OurProject\Private\Bot.cpp">
       <Filter>Source\OurProject\Private</Filter>
     </ClCompile>
   </ItemGroup>

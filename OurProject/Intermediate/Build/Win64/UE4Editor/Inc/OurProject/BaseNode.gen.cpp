@@ -19,8 +19,13 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 	UPackage* Z_Construct_UPackage__Script_OurProject();
 	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_addUnit();
 	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_flipControlledState();
+	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_isCaptured();
 	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_isSameState();
+	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_nodeClaimed();
+	OURPROJECT_API UEnum* Z_Construct_UEnum_OurProject_EClaimState();
 	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_setState();
+	OURPROJECT_API UFunction* Z_Construct_UFunction_ABaseNode_takeDamage();
+	ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
@@ -30,8 +35,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "addUnit", &ABaseNode::execaddUnit },
 			{ "flipControlledState", &ABaseNode::execflipControlledState },
+			{ "isCaptured", &ABaseNode::execisCaptured },
 			{ "isSameState", &ABaseNode::execisSameState },
+			{ "nodeClaimed", &ABaseNode::execnodeClaimed },
 			{ "setState", &ABaseNode::execsetState },
+			{ "takeDamage", &ABaseNode::exectakeDamage },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -89,6 +97,43 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseNode_isCaptured_Statics
+	{
+		struct BaseNode_eventisCaptured_Parms
+		{
+			bool ReturnValue;
+		};
+		static void NewProp_ReturnValue_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_ABaseNode_isCaptured_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+	{
+		((BaseNode_eventisCaptured_Parms*)Obj)->ReturnValue = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ABaseNode_isCaptured_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(BaseNode_eventisCaptured_Parms), &Z_Construct_UFunction_ABaseNode_isCaptured_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseNode_isCaptured_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseNode_isCaptured_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseNode_isCaptured_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseNode_isCaptured_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseNode, nullptr, "isCaptured", nullptr, nullptr, sizeof(BaseNode_eventisCaptured_Parms), Z_Construct_UFunction_ABaseNode_isCaptured_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseNode_isCaptured_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseNode_isCaptured_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseNode_isCaptured_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseNode_isCaptured()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseNode_isCaptured_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseNode_isSameState_Statics
 	{
 		struct BaseNode_eventisSameState_Parms
@@ -130,6 +175,41 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics
+	{
+		struct BaseNode_eventnodeClaimed_Parms
+		{
+			EClaimState botTeam;
+		};
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_botTeam;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_botTeam_Underlying;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::NewProp_botTeam = { "botTeam", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseNode_eventnodeClaimed_Parms, botTeam), Z_Construct_UEnum_OurProject_EClaimState, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::NewProp_botTeam_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::NewProp_botTeam,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::NewProp_botTeam_Underlying,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseNode, nullptr, "nodeClaimed", nullptr, nullptr, sizeof(BaseNode_eventnodeClaimed_Parms), Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseNode_nodeClaimed()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseNode_nodeClaimed_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ABaseNode_setState_Statics
 	{
 		struct BaseNode_eventsetState_Parms
@@ -162,6 +242,38 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ABaseNode_takeDamage_Statics
+	{
+		struct BaseNode_eventtakeDamage_Parms
+		{
+			float damage;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damage;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABaseNode_takeDamage_Statics::NewProp_damage = { "damage", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(BaseNode_eventtakeDamage_Parms, damage), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseNode_takeDamage_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseNode_takeDamage_Statics::NewProp_damage,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABaseNode_takeDamage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BaseNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseNode_takeDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseNode, nullptr, "takeDamage", nullptr, nullptr, sizeof(BaseNode_eventtakeDamage_Parms), Z_Construct_UFunction_ABaseNode_takeDamage_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_ABaseNode_takeDamage_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ABaseNode_takeDamage_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ABaseNode_takeDamage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ABaseNode_takeDamage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ABaseNode_takeDamage_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ABaseNode_NoRegister()
 	{
 		return ABaseNode::StaticClass();
@@ -174,9 +286,22 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_claimSound_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_claimSound;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_nodeClaimState_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_nodeClaimState;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_nodeClaimState_Underlying;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_health_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_health;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_maxHealth_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_maxHealth;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_controlledState_MetaData[];
 #endif
@@ -208,8 +333,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABaseNode_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseNode_addUnit, "addUnit" }, // 3475337846
 		{ &Z_Construct_UFunction_ABaseNode_flipControlledState, "flipControlledState" }, // 3717789923
+		{ &Z_Construct_UFunction_ABaseNode_isCaptured, "isCaptured" }, // 1253123753
 		{ &Z_Construct_UFunction_ABaseNode_isSameState, "isSameState" }, // 61120659
+		{ &Z_Construct_UFunction_ABaseNode_nodeClaimed, "nodeClaimed" }, // 2721334708
 		{ &Z_Construct_UFunction_ABaseNode_setState, "setState" }, // 3912879652
+		{ &Z_Construct_UFunction_ABaseNode_takeDamage, "takeDamage" }, // 2302780314
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::Class_MetaDataParams[] = {
@@ -218,12 +346,34 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_claimSound_MetaData[] = {
+		{ "Category", "BaseNode" },
+		{ "ModuleRelativePath", "BaseNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_claimSound = { "claimSound", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, claimSound), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_claimSound_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_claimSound_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState_MetaData[] = {
+		{ "Category", "BaseNode" },
+		{ "ModuleRelativePath", "BaseNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState = { "nodeClaimState", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, nodeClaimState), Z_Construct_UEnum_OurProject_EClaimState, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_health_MetaData[] = {
 		{ "Category", "BaseNode" },
 		{ "ModuleRelativePath", "BaseNode.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_health = { "health", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, health), METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_health_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_health_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_maxHealth_MetaData[] = {
+		{ "Category", "BaseNode" },
+		{ "ModuleRelativePath", "BaseNode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_maxHealth = { "maxHealth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, maxHealth), METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_maxHealth_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_maxHealth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState_MetaData[] = {
 		{ "Category", "BaseNode" },
@@ -261,7 +411,11 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh = { "nodeMesh", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABaseNode, nodeMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData, ARRAY_COUNT(Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeMesh_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseNode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_claimSound,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_nodeClaimState_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_health,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_maxHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_controlledState,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_unitsOnNode,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseNode_Statics::NewProp_enemyMat,
@@ -295,7 +449,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseNode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABaseNode, 2249164296);
+	IMPLEMENT_CLASS(ABaseNode, 3109654839);
 	template<> OURPROJECT_API UClass* StaticClass<ABaseNode>()
 	{
 		return ABaseNode::StaticClass();
